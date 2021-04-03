@@ -7,7 +7,7 @@ while True:
     i = str(input('Give me a CSV or press ENTER to start comparing'))
     if i != '':
         i = i.replace('\\','')
-        if i[-1] == '':
+        if i[-1] == ' ':
             i = i[:-1]
         csv.append(i)
     else:
